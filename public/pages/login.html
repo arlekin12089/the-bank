@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Bank</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner header-modified">
+          <div class="header__logo">
+            <a href="/">
+              <img src="/img/logo.png" alt="Bank logo" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <section class="form-section">
+          <h1>Log In</h1>
+          <form id="loginForm">
+            <div class="form-field">
+              <label for="login">Login:</label>
+              <input type="text" name="login" id="login" />
+            </div>
+            <div class="form-field">
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" />
+            </div>
+            <div class="form-field">
+              <button class="btn btn--green" id="login_btn">Log in</button>
+            </div>
+          </form>
+          <div class="reg-option">
+            <p>or</p>
+            <a href="/pages/register.html" class="registerBtn">Register</a>
+          </div>
+          <p class="error-message"></p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-contact">
+          <ul>
+            <li>Phone: <a href="tel:46700838975">+46700838975</a></li>
+            <li>Email: <a href="mailto:doggos@gmail.com">bank@gmail.com</a></li>
+            <li>Address: 11366 Stockholm, Anna Whitlocks street 16</li>
+          </ul>
+          <ul class="social">
+            <li>
+              <a href="https://facebook.com">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p>© Bank 2022</p>
+      </div>
+    </footer>
+    <script src="/login.js"></script>
+  </body>
+</html>
