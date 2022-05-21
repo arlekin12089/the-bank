@@ -5,7 +5,7 @@ let account_balance =  document.querySelector('.account_balance');
 let deleteAccountBtn = document.getElementById('deleteAccountBtn');
 let addMoney = document.getElementById('addMoney');
 let withdrawMoney = document.getElementById('withdrawMoney');
-
+ let errorTransaction = document.querySelector('.error-transaction');
 //get account
 let getProfile = async() => {
 	let response = await fetch('/api/profile');
@@ -74,7 +74,11 @@ let updatedBalance = -parseInt(withdrawMoney.value);
 console.log('withdraw');
 console.log(updatedBalance)
 if(profile.amount<=0){
- let errorTransaction = document.querySelector('.error-transaction');
+ console.log(profile.amount)
+ errorTransaction.innerHTML = 'You do not have enough money!';
+ return;
+}
+if(profile.amount < parseInt(withdrawMoney.value)){
  errorTransaction.innerHTML = 'You do not have enough money!';
  return;
 }
